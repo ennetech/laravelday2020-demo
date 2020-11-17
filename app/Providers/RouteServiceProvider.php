@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Ennetech\LaravelRoutingUtilities\Autoloader\RouteAutoloader;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,11 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         //
+        Route::group([
+            'prefix' => 'api/v1',
+        ], function () {
+            RouteAutoloader::loadNamespace('App\Http\Controllers\Api\v1');
+        });
     }
 
     /**
