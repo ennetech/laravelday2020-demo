@@ -26,6 +26,8 @@ class HelloController
      * @method POST
      * @path /personalized
      *
+     * @middleware authy
+     *
      * @return string[]
      */
     public function personalizedHello(ExampleRequest $request)
