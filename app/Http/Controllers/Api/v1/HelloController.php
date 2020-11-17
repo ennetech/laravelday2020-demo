@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Requests\ExampleRequest;
 use App\Http\Resources\UserResource;
+use App\Logic\Cursers\CurserContract;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 class HelloController
@@ -21,6 +22,14 @@ class HelloController
         return ["hello!"];
     }
 
+    /**
+     * @method GET
+     * @path /curse
+     */
+    public function curse(CurserContract $curser)
+    {
+        return $curser->curse();
+    }
 
     /**
      * @method POST
