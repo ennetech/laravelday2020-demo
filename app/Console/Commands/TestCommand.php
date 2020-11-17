@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Actions\TestActions\ReturnInput;
 use Illuminate\Console\Command;
 
 class TestCommand extends Command
@@ -38,6 +39,7 @@ class TestCommand extends Command
     public function handle()
     {
         $this->info(\Ennetech\TestClass::hello());
+        $this->info(ReturnInput::run("input test"));
         return 0;
     }
 }
