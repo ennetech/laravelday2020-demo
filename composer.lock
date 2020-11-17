@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3d88fa6639c9463d85260309c03bb68",
+    "content-hash": "59c6113a37fbe5c123d8189e68eb5913",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -433,6 +433,46 @@
                 }
             ],
             "time": "2020-11-14T15:56:27+00:00"
+        },
+        {
+            "name": "ennetech/laravel-routing-utilities",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ennetech/laravel-routing-utilities.git",
+                "reference": "94a6ea106691295b04a3f1e50f9ba267b901d977"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ennetech/laravel-routing-utilities/zipball/94a6ea106691295b04a3f1e50f9ba267b901d977",
+                "reference": "94a6ea106691295b04a3f1e50f9ba267b901d977",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ennetech\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "enne",
+                    "email": "n@enne.tech"
+                }
+            ],
+            "description": "This package allows you to work faster and better with laravel routes",
+            "support": {
+                "issues": "https://github.com/ennetech/laravel-routing-utilities/issues",
+                "source": "https://github.com/ennetech/laravel-routing-utilities/tree/1.0.0"
+            },
+            "time": "2020-11-17T19:57:44+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -6544,5 +6584,5 @@
         "php": "^7.2.5|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
