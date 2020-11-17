@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Actions\TestActions\ReturnInput;
+use App\Actions\TestActions\ReturnInputWithCurse;
 use Illuminate\Console\Command;
 
 class TestCommand extends Command
@@ -40,6 +41,7 @@ class TestCommand extends Command
     {
         $this->info(\Ennetech\TestClass::hello());
         $this->info(ReturnInput::run("input test"));
+        $this->info(ReturnInputWithCurse::run(" < is cursing!"));
         return 0;
     }
 }
